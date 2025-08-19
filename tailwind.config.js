@@ -12,29 +12,35 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand: {
-          primary: '#4E4456',
-          'accent-primary': '#A2D0C8',
-          'accent-secondary': '#81D8D0',
-          background: '#F7F7F9',
-          card: '#FFFFFF',
-          'text-primary': '#4E4456',
-          'text-muted': '#9E9AA7',
-          border: '#E0E0E0',
-          gain: '#65D6AD',
-          loss: '#FF8B8B',
-          destructive: '#E53E3E'
+        primary: '#4E4456',
+        accent: {
+          DEFAULT: '#A2D0C8',
+          light: '#81D8D0',
         },
-        dark: {
+        background: {
+          light: '#F7F7F9',
+          dark: '#1A181F',
+        },
+        card: {
+          light: '#FFFFFF',
+          dark: '#2C2834',
+        },
+        text: {
           primary: '#4E4456',
-          'accent-primary': '#A2D0C8',
-          'accent-secondary': '#81D8D0',
-          background: '#1A181F',
-          card: '#2C2834',
-          'text-primary': '#FFFFFF',
-          'text-muted': '#9E9AA7',
-          border: 'rgba(255, 255, 255, 0.1)'
+          muted: '#9E9AA7',
+          'primary-dark': '#FFFFFF',
+        },
+        border: {
+          light: '#E0E0E0',
+          dark: 'rgba(255, 255, 255, 0.1)',
+        },
+        functional: {
+            gain: '#65D6AD',
+            loss: '#FF8B8B',
         }
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
